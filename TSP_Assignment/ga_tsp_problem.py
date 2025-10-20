@@ -159,7 +159,7 @@ def plot_boxplot(all_results, labels, filename="boxplot.png"):
     plt.close()
 
 
-def run_multiple(filename, pop_size, mutation_rate, generations, runs=10):
+def run_multiple(filename, pop_size, mutation_rate, generations, runs=2):
     distances = []
     runtimes = []
     cities = load_cities(filename)
@@ -188,9 +188,7 @@ def run_multiple(filename, pop_size, mutation_rate, generations, runs=10):
 
 def run_full_experiments():
     tsp_files = {
-        "berlin52": "../resources/tsp/berlin52.json",
-        "a280": "../resources/tsp/a280.json",
-        "pcb442": "../resources/tsp/pcb442.json"
+        "SOUP": "../resources/tsp/SOUP.json",
     }
 
     results = []
